@@ -7,47 +7,48 @@ import OptionSimple from './components/OptionSimple';
 import OptionDetail from './components/OptionDetail';
 import PriceWindow from './components/PriceWindow';
 
-let priceBase: number;
-let priceColor: number;
-let pricePower: number;
-let priceWarp: number;
-let pricePackage: number;
-let priceTotal: number;
-
-
-function priceCalculation () {
-  
-}
 
 function App() {
+  const initialState: {[key: string]: number} = {
+    priceBase: 0,
+    priceColor: 0,
+    pricePower: 0,
+    priceWarp: 0,
+    pricePackage: 0,
+    priceTotal: 0
+    }
+
+  const update = (target: string, price: number) => {costs[target] = price; setCosts({...costs})}
+  
+  const [costs, setCosts] = useState(initialState);
   return (
     <div className="App">
       <div className="Window">
         <h1> Spaceship configurator </h1>
 
         <h2> Select color: </h2>
-        <PriceWindow />
+        <PriceWindow costs={costs} />
         <div className='selection'>
-          <OptionColor color="red" name="Red" price={0} />
-          <OptionColor color="green" name="Green" price={100}/>
-          <OptionColor color="blue" name="Blue" price={1000}/>
+          <OptionColor color="#FFFFFF" name="Snow" target="priceColor" price={0} update={update}/>
+          <OptionColor color="#FF7A00" name="Volcano" target="priceColor" price={100} update={update}/>
+          <OptionColor color="#6BE4FF" name="Sky" target="priceColor" price={1000} update={update}/>
         </div>
         <h2> Select power: </h2>
         <div className='selection'>
-          <OptionSimple name="100 MW" price={100} />
-          <OptionSimple name="150 MW" price={150} />
-          <OptionSimple name="200 MW" price={200} />
+          <OptionSimple name="100 MW" price={100} target="pricePower" update={update}/>
+          <OptionSimple name="150 MW" price={150} target="pricePower" update={update}/>
+          <OptionSimple name="200 MW" price={200} target="pricePower" update={update}/>
         </div>
         <h2> Warp drive: </h2>
         <div className='selection'>
-          <OptionSimple name="NO" price={0} />
-          <OptionSimple name="YES" price={1000} />
+          <OptionSimple name="NO" price={0} target="priceWarp" update={update}/>
+          <OptionSimple name="YES" price={1000} target="priceWarp" update={update}/>
         </div>
         <h2> Select option package: </h2>
         <div className='selection'>
-          <OptionDetail name="Basic" price={0}/>
-          <OptionDetail name="Sport" price={100}/>
-          <OptionDetail name="Luxury" price={500}/>
+          <OptionDetail name="Basic" price={0} target="pricePackage" update={update}/>
+          <OptionDetail name="Sport" price={100} target="pricePackage" update={update}/>
+          <OptionDetail name="Luxury" price={500} target="pricePackage" update={update}/>
         </div>
       </div>
     </div>

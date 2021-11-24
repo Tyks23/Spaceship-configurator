@@ -1,6 +1,9 @@
 @import "../Global";
 
 .container-price {
+  margin-right: 32px;
+  line-height: 14px;
+  float: right;
   display: flex;
   width: 304px;
   height: 240px;
@@ -10,14 +13,19 @@
   flex-direction: column;
   padding: 1px 1px 1px 1px;
   background-color: $color-green-background;
+  position: relative;
 }
 .container-price-sub {
+  padding: 10% 0;
   display: flex;
-  width: 100%;
+  width: 304px;
   height: 64px;
   border: 1px solid $color-green-light;
+  border-bottom: none;
   border-radius: 0px 0px 8px 8px;
   align-items: center;
   flex-direction: column;
   padding: 1px 1px 1px 1px;
+  position: absolute;
+  bottom: 0;
 }

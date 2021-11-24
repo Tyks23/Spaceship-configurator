@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './PriceWindow.scss';
 
 
-function PriceWindow() {
+
+function PriceWindow({costs}: {
+  costs:{
+    [key: string]: number;
+  }
+  
+}) {
+  
+  let sum = Object.values(costs).reduce((a, b) => a + b, 0);
+
   return (
     <div className='container-price'>
-      <p>Base price: </p>
-      <p>Color: </p>
-      <p>Power: </p>
-      <p>Warp drive: </p>
-      <p>Option packlage: </p>
+      <p>Base price: {1000}</p>
+      <p>Color: {costs.priceColor}</p>
+      <p>Power: {costs.pricePower}</p>
+      <p>Warp drive: {costs.priceWarp}</p>
+      <p>Option package: {costs.pricePackage}</p>
         <div className='container-price-sub'>
-          <p>Total: </p>
+          <p>Total: {sum + 1000}</p>
         </div>
     </div>
   );
