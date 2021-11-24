@@ -1,0 +1,17 @@
+@import "Global";
+.App {
+  justify-content: center;
+  text-align: center;
+  background-color: $color-background-main;
+  color: $color-green-light;
+  font-family: "Roboto Mono", monospace;
+}
+.Window {
+  border: 1px solid $color-green-light;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.selection {
+  display: flex;
+  flex-direction: row;
+}
