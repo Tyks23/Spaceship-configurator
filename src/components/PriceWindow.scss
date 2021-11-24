@@ -9,7 +9,6 @@
   height: 240px;
   border: 1px solid $color-green-light;
   border-radius: 8px;
-  align-items: center;
   flex-direction: column;
   padding: 1px 1px 1px 1px;
   background-color: $color-green-background;
@@ -20,7 +19,7 @@
   display: flex;
   width: 304px;
   height: 64px;
-  border: 1px solid $color-green-light;
+  border-top: 1px solid $color-green-light;
   border-bottom: none;
   border-radius: 0px 0px 8px 8px;
   align-items: center;
@@ -28,4 +27,8 @@
   padding: 1px 1px 1px 1px;
   position: absolute;
   bottom: 0;
+}
+
+.p-left{
+ 
 }

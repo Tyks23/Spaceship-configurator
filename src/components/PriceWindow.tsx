@@ -14,7 +14,7 @@ function PriceWindow({costs}: {
 
   return (
     <div className='container-price'>
-      <p>Base price: {1000}</p>
+      <p className="p-left">Base price: <a className="a-right">{1000}</a></p>
       <p>Color: {costs.priceColor}</p>
       <p>Power: {costs.pricePower}</p>
       <p>Warp drive: {costs.priceWarp}</p>

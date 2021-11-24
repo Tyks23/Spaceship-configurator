@@ -12,7 +12,7 @@ function OptionColor({ color, name, price, update, target}: {
   return (
     <div className="container-color" onClick={() => update(target, price)}>
       <div className="color-sample" style={{ backgroundColor: color }} />
-      <p>+{price}€</p>
+      <p className="p-price">+{price}€</p>
       <p>{name}</p>
     </div>
   );

@@ -46,9 +46,9 @@ function App() {
         </div>
         <h2> Select option package: </h2>
         <div className='selection'>
-          <OptionDetail name="Basic" price={0} target="pricePackage" update={update}/>
-          <OptionDetail name="Sport" price={100} target="pricePackage" update={update}/>
-          <OptionDetail name="Luxury" price={500} target="pricePackage" update={update}/>
+          <OptionDetail name="Basic" price={0} target="pricePackage" update={update} features={["Air conditioning", "Cloth seats", "Fm Radio"]}/>
+          <OptionDetail name="Sport" price={100} target="pricePackage" update={update} features={["Air conditioning", "Cloth seats", "Fm Radio", "Personal tech support"]}/>
+          <OptionDetail name="Luxury" price={500} target="pricePackage" update={update} features={["Air conditioning", "Cloth seats", "Fm Radio", "Chrome wheels", "Window tint", "Subwoofer"]}/>
         </div>
       </div>
     </div>

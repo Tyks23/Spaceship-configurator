@@ -10,7 +10,7 @@ function OptionSimple({name, price, update, target}: {
   return (
     <div className="container-simple" onClick={() => update(target, price)}>
       <p>{name}</p>
-      <p>{price}</p>
+      <p className="p-price">+{price}€</p>
     </div>
   );
 }
