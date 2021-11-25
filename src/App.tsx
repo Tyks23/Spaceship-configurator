@@ -21,6 +21,8 @@ function App() {
   const update = (target: string, price: number) => {costs[target] = price; setCosts({...costs})}
   
   const [costs, setCosts] = useState(initialState);
+
+  
   return (
     <div className="App">
       <div className="Window">

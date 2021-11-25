@@ -9,7 +9,7 @@ function OptionDetail({ name, price, target, update, features }:{
   features: string[]
 }) {
   const featureList = features.map((feature) =>
-    <li>▲{feature}</li>);
+    <li className="feature">▲{feature}</li>);
   return (
     <div className="container-detail" onClick={() => update(target, price)}>
       <p>{name}</p>

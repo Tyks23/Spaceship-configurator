@@ -2,25 +2,36 @@
 .App {
   display: flex;
   justify-content: center;
-  text-align: center;
   background-color: $color-background-main;
   color: $color-green-light;
-  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  
+  
 }
 .Window {
   margin-top: 32px;
   width: 944px;
-  height: 848px;
+  height: 90%;
   border: 1px solid $color-green-light;
   box-sizing: border-box;
   border-radius: 8px;
+  
+  
 }
 .selection {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 html {
   background-color: $color-background-main;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  margin-left: 32px;
 }
 

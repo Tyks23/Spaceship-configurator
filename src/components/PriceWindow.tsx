@@ -14,15 +14,34 @@ function PriceWindow({costs}: {
 
   return (
     <div className='container-price'>
-      <p className="p-left">Base price: <a className="a-right">{1000}</a></p>
-      <p>Color: {costs.priceColor}</p>
-      <p>Power: {costs.pricePower}</p>
-      <p>Warp drive: {costs.priceWarp}</p>
-      <p>Option package: {costs.pricePackage}</p>
-        <div className='container-price-sub'>
-          <p>Total: {sum + 1000}</p>
+      <div className='row'>
+        <div className='column'>
+          <p>Base price:</p>
+          <p>Color:</p>
+          <p>Power:</p>
+          <p>Warp drive:</p>
+          <p>Option package:</p>
         </div>
-    </div>
+        <div className='column prices'>
+          <p>{1000}€</p>
+          <p>+{costs.priceColor}€</p>
+          <p>+{costs.pricePower}€</p>
+          <p>+{costs.priceWarp}€</p>
+          <p>+{costs.pricePackage}€</p>
+        </div>
+      
+        <div className='container-price-sub'>
+          <div className='row'>
+            <div className='column'>
+              <p>Total:</p>
+            </div>
+            <div className='column prices'>
+              <p>{sum + 1000}€</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   );
 }
 
