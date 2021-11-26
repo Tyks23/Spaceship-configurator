@@ -6,8 +6,7 @@
   display: flex;
   width: 160px;
   height: 112px;
-  border: 1px solid $color-green-light;
-  border-radius: 8px;
+  @extend universal-border;
   align-items: center;
   flex-direction: column;
   padding: 1px;
