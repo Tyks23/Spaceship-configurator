@@ -3,12 +3,11 @@
 .container-color {
   line-height: 1px;
   margin-left: 32px;
-  display: flex;
+  @extend .universal-container-inner;
   width: 160px;
   height: 112px;
   @extend .universal-border;
-  align-items: center;
-  flex-direction: column;
+
   padding: 1px;
 }
 

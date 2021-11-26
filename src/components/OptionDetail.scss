@@ -2,23 +2,19 @@
 
 .container-detail {
   margin-left: 32px;
-  display: flex;
+  @extend .universal-container-inner;
   width: 160px;
   height: 192px;
   @extend .universal-border;
-  align-items: center;
-  flex-direction: column;
   padding: 1px;
   line-height: 6px;
   position: relative;
 }
 .container-detail-sub {
-  display: flex;
+  @extend .universal-container-inner;
   width: 99%;
   height: 129px;
   border-radius: 8px;
-  align-items: center;
-  text-align: left;
   flex-direction: column;
   padding: 1px;
   background-color: $color-green-background;

@@ -24,7 +24,7 @@ export const detailItems = [
       "Cloth seats",
       "Fm Radio",
       "Chrome wheels",
-      "Window tint",
+      "Personal tech support",
       "Subwoofer",
     ],
   },
@@ -53,3 +53,8 @@ export const detailItems = [
     ],
   },
 ];
+
+/* test
+calls onClick function
+priceWindow component changes correctly
+*/

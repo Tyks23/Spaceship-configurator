@@ -15,8 +15,16 @@ function OptionDetail({
   active?: boolean;
   onClick: (item: { price: number }) => void;
 }) {
+  let priceBool;
+  let priceParagraph;
+
+  if (price == 0) {
+    priceParagraph = <p></p>;
+  } else {
+    priceParagraph = <p>+{price}€</p>;
+  }
   const featureList = features.map((feature) => (
-    <li className="feature">▲{feature}</li>
+    <li className="feature">▲ {feature}</li>
   ));
   return (
     <div
@@ -26,7 +34,7 @@ function OptionDetail({
       })}
     >
       <p>{name}</p>
-      <p>+{price}€</p>
+      <p>{priceParagraph}</p>
       <div className="container-detail-sub">
         <ul>{featureList}</ul>
       </div>

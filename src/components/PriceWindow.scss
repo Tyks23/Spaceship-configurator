@@ -4,11 +4,10 @@
   margin-right: 32px;
   line-height: 14px;
   float: right;
-  display: flex;
+  @extend .universal-container-inner;
   width: 304px;
   height: 240px;
-  border: 1px solid $color-green-light;
-  border-radius: 8px;
+  @extend .universal-border;
   flex-direction: column;
   padding: 1px 1px 1px 1px;
   background-color: $color-green-background;
@@ -16,19 +15,17 @@
 }
 .container-price-sub {
   padding: 10% 0;
-  display: flex;
+  @extend .universal-container-inner;
   width: 304px;
   height: 64px;
   border-top: 1px solid $color-green-light;
   border-bottom: none;
   border-radius: 0px 0px 8px 8px;
   font-size: 18px;
-  flex-direction: column;
   padding: 1px 1px 1px 1px;
   position: absolute;
   bottom: 0;
 }
-
 
 .row {
   display: flex;
@@ -41,7 +38,4 @@
 
 .prices {
   color: #fff;
-  
 }
-
-
