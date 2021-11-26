@@ -23,9 +23,13 @@ function OptionDetail({
   } else {
     priceParagraph = <p>+{price}€</p>;
   }
-  const featureList = features.map((feature) => (
-    <li className="feature">▲ {feature}</li>
-  ));
+  const featureList = features.map((feature) =>
+    feature.length > 15 ? (
+      <li className="feature-compressed">▲ {feature}</li>
+    ) : (
+      <li className="feature">▲ {feature}</li>
+    )
+  );
   return (
     <div
       onClick={() => onClick({ price })}

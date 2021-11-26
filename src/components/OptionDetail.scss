@@ -33,3 +33,11 @@ ul {
 .feature {
   font-size: 12px;
 }
+
+.feature-compressed {
+  @extend .feature;
+
+  word-spacing: -4px;
+}
+
+// word-spacing: 30px;
