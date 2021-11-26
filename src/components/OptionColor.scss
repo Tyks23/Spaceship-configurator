@@ -6,7 +6,7 @@
   display: flex;
   width: 160px;
   height: 112px;
-  @extend universal-border;
+  @extend .universal-border;
   align-items: center;
   flex-direction: column;
   padding: 1px;
@@ -25,5 +25,5 @@ p {
 
 .container-color-active {
   @extend .container-color;
-  box-shadow: 0px 0px 10px 0px #7BF762;
+  box-shadow: 0px 0px 10px 0px #7bf762;
 }

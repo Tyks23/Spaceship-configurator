@@ -1,14 +1,25 @@
-import React from 'react';
-import './OptionSimple.scss';
+import React from "react";
+import "./OptionSimple.scss";
+import classnames from "classnames";
 
-function OptionSimple({name, price, update, target}: {
-  name: string,
-  price: number,
-  update: Function,
-  target: string
+function OptionSimple({
+  name,
+  price,
+  active = false,
+  onClick,
+}: {
+  name: string;
+  price: number;
+  active?: boolean;
+  onClick: (item: { price: number }) => void;
 }) {
   return (
-    <div className="container-simple" onClick={() => update(target, price)}>
+    <div
+      onClick={() => onClick({ price })}
+      className={classnames("container-simple", {
+        "container-simple-active": active,
+      })}
+    >
       <p>{name}</p>
       <p className="p-price">+{price}€</p>
     </div>

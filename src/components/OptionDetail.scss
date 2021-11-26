@@ -5,7 +5,7 @@
   display: flex;
   width: 160px;
   height: 192px;
-  @extend universal-border !optional;
+  @extend .universal-border;
   align-items: center;
   flex-direction: column;
   padding: 1px;
@@ -26,10 +26,11 @@
   position: absolute;
   bottom: 0px;
 }
-.container-detail:hover {
-  box-shadow: 0px 0px 10px 0px #7BF762;
+.container-detail-active {
+  @extend .container-detail;
+  box-shadow: 0px 0px 10px 0px #7bf762;
 }
-ul{
+ul {
   list-style-type: none;
   padding-inline-start: 0;
 }
