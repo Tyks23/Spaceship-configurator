@@ -31,9 +31,9 @@ function App() {
         <h2> Select color: </h2>
         <PriceWindow costs={costs} />
         <div className='selection'>
-          <OptionColor color="#FFFFFF" name="Snow" target="priceColor" price={0} update={update} isActive={true}/>
-          <OptionColor color="#FF7A00" name="Volcano" target="priceColor" price={100} update={update} isActive={true}/>
-          <OptionColor color="#6BE4FF" name="Sky" target="priceColor" price={1000} update={update} isActive={true}/>
+          <OptionColor color="#FFFFFF" name="Snow" target="priceColor" price={0} update={update} />
+          <OptionColor color="#FF7A00" name="Volcano" target="priceColor" price={100} update={update} />
+          <OptionColor color="#6BE4FF" name="Sky" target="priceColor" price={1000} update={update} />
         </div>
         <h2> Select power: </h2>
         <div className='selection'>

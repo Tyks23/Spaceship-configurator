@@ -2,26 +2,25 @@ import React from 'react';
 import { isPropertySignature } from 'typescript';
 import './OptionColor.scss';
 
-function OptionColor({ color, name, price, update, target, isActive}: {
+function OptionColor({ color, name, price, update, target}: {
   color: string,
   name: string,
   price: number,
   update: Function,
-  target: string,
-  isActive: boolean
+  target: string
 }) {
-  let classNameTest = 'container-color';
+ /* let classNameTest = 'container-color';
   if (!isActive) {
     classNameTest = 'container-color-active';
-  }
+  }*/
 
-  function ReverseBool(variable: boolean){
+  /* function ReverseBool(variable: boolean){
     variable != variable;
     return variable;
-  }
+  }*/
 
   return (
-    <div className='container-color' onClick={() => {update(target, price); console.log(isActive, classNameTest);}}>
+    <div className='container-color' onClick={() => {update(target, price);}}>
       <div className="color-sample" style={{ backgroundColor: color }} />
       <p className="p-price">+{price}€</p>
       <p>{name}</p>
