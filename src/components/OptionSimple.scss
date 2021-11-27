@@ -12,5 +12,5 @@
 
 .container-simple-active {
   @extend .container-simple;
-  box-shadow: 0px 0px 10px 0px #7bf762;
+  @extend .universal-container-active;
 }

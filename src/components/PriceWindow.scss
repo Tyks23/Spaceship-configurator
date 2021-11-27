@@ -9,20 +9,19 @@
   height: 240px;
   @extend .universal-border;
   flex-direction: column;
-  padding: 1px 1px 1px 1px;
+  padding:1px;
   background-color: $color-green-background;
   position: relative;
 }
 .container-price-sub {
   padding: 10% 0;
-  @extend .universal-container-inner;
   width: 304px;
   height: 64px;
   border-top: 1px solid $color-green-light;
   border-bottom: none;
   border-radius: 0px 0px 8px 8px;
   font-size: 18px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px;
   position: absolute;
   bottom: 0;
 }

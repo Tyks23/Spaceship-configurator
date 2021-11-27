@@ -15,14 +15,10 @@ function OptionDetail({
   active?: boolean;
   onClick: (item: { price: number }) => void;
 }) {
-  let priceBool;
+  
   let priceParagraph;
-
-  if (price == 0) {
-    priceParagraph = <p></p>;
-  } else {
-    priceParagraph = <p>+{price}€</p>;
-  }
+  price == 0 ? priceParagraph = <p></p> : priceParagraph = <p>+{price}€</p>;
+  
   const featureList = features.map((feature) =>
     feature.length > 15 ? (
       <li className="feature-compressed">▲ {feature}</li>

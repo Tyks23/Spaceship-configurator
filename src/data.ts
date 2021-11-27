@@ -23,9 +23,6 @@ export const detailItems = [
       "Air conditioning",
       "Cloth seats",
       "Fm Radio",
-      "Chrome wheels",
-      "Personal tech support",
-      "Subwoofer",
     ],
   },
   {
@@ -35,9 +32,7 @@ export const detailItems = [
       "Air conditioning",
       "Cloth seats",
       "Fm Radio",
-      "Chrome wheels",
-      "Window tint",
-      "Subwoofer",
+      "Personal tech support",
     ],
   },
   {
@@ -45,7 +40,7 @@ export const detailItems = [
     price: 500,
     features: [
       "Air conditioning",
-      "Cloth seats",
+      "Luxury seats",
       "Fm Radio",
       "Chrome wheels",
       "Window tint",
