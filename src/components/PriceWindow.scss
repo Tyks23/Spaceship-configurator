@@ -1,40 +1,36 @@
 @import "../Global";
 
 .container-price {
-  margin-right: 32px;
-  line-height: 14px;
-  float: right;
-  @extend .universal-container-inner;
-  width: 304px;
-  height: 240px;
-  @extend .universal-border;
-  flex-direction: column;
-  padding:1px;
+  padding-top: 5%;
+  display: grid!important;
+  grid-area: Check;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
+  gap: 3% 0;
+  justify-items: left;
+  align-items: center;
   background-color: $color-green-background;
-  position: relative;
+  @extend .universal-border;
+  @extend .universal-container-inner;
+  color: $color-green-light !important;
+  box-sizing: border-box;
 }
-.container-price-sub {
-  padding: 10% 0;
-  width: 304px;
-  height: 64px;
+
+.container-price p {
+  padding-left: 6.9% ;
+  box-sizing: border-box;
+  margin:0;
+  letter-spacing: 2px;
+}
+
+.container-price p:nth-child(2n) {
+  color: #FFF;
+}
+
+.container-price p:nth-last-of-type(-n+2) {
   border-top: 1px solid $color-green-light;
-  border-bottom: none;
-  border-radius: 0px 0px 8px 8px;
-  font-size: 18px;
-  padding: 1px;
-  position: absolute;
-  bottom: 0;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-  padding: 10px;
-}
-
-.prices {
-  color: #fff;
+  width: 100%;
+  justify-self: center;
+  padding: 1rem 6.9%;
+  font-size: 1.5rem;
 }

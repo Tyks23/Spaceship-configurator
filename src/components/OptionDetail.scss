@@ -1,43 +1,46 @@
 @import "../Global";
 
 .container-detail {
-  margin-left: 32px;
   @extend .universal-container-inner;
   width: 160px;
   height: 192px;
   @extend .universal-border;
-  padding: 1px;
   line-height: 6px;
   position: relative;
 }
 .container-detail-sub {
-  @extend .universal-container-inner;
-  width: 160px;
-  height: 129px;
-  border-radius: 8px;
+  width: 100%;
+  height: 65%;
+  display:flex;
   flex-direction: column;
-  padding: 1px;
   background-color: $color-green-background;
+  border-radius:8px;
   line-height: 16px;
-  position: absolute;
-  bottom: 0px;
 }
+
+.container-title-sub {
+  width: 100%;
+  height: 35%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  box-sizing: border-box;
+}
+
 .container-detail-active {
   @extend .container-detail;
   @extend .universal-container-active;
 }
+
 ul {
   list-style-type: none;
   padding-inline-start: 0;
+  padding: 0 5%;
 }
-.feature {
+
+li {
   font-size: 12px;
+  letter-spacing: .5px;
 }
 
-.feature-compressed {
-  @extend .feature;
-
-  word-spacing: -4px;
-}
-
-// word-spacing: 30px;

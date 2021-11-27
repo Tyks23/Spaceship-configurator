@@ -1,39 +1,72 @@
 @import "Global";
+
 .App {
-  display: flex;
-  justify-content: center;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: .5fr auto auto auto auto;
+  justify-items: center; 
+  align-items: center; 
+  gap: 6% 3%; 
+  grid-template-areas: 
+    "Title Title Title"
+    "Color-selection Color-selection Check"
+    "Power-selection Power-selection Check"
+    "Warp-drive-selection Warp-drive-selection ."
+    "Package-selection Package-selection ."; 
   background-color: $color-background-main;
   color: $color-green-light;
-  width: 100%;
-  
-  
-}
-.Window {
-  margin-top: 32px;
-  width: 944px;
-  height: 848px;
   border: 1px solid $color-green-light;
-  box-sizing: border-box;
+  width: 65.5%;
+  max-width: 944px;
+  height: 82.8125%;
+  max-height: 848px;
   border-radius: 8px;
-  
-  
+  box-sizing: border-box;
+  margin: 3.125% auto auto;
+  padding: 1% 1.3%;
 }
+
 .selection {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 49px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 6%;
 }
 
-html {
-  background-color: $color-background-main;
+.selection>div {
+  cursor: pointer;
+  user-select: none;
 }
 
-h1 {
-  text-align: center;
+
+.Title { grid-area: Title; }
+.Color-selection { grid-area: Color-selection; }
+.Power-selection { grid-area: Power-selection; }
+.Warp-drive-selection { grid-area: Warp-drive-selection; }
+.Package-selection { grid-area: Package-selection; }
+
+.App>div {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
+
+p {
+  margin: 6.9%;
+}
+
 h2 {
-  margin-left: 32px;
-  
+  position: absolute;
+  top: -32px;
 }
 
+
+h1,h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 2px;
+}

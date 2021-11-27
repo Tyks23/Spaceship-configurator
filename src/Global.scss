@@ -1,14 +1,25 @@
-@import url("https://fonts.google.com/specimen/Roboto+Mono");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+// @import url("https://fonts.google.com/specimen/Roboto+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 $color-background-main: #051544;
 $color-green-light: #7bf762;
 $color-green-dark: #5a8f4f;
 $color-green-background: #1c3c16;
 
-body {
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  height:100%;
+  width:100%;
+  background-color: $color-background-main;
   font-size: 14px;
   font-family: "Roboto Mono", monospace;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 .p-price {
   font-size: 12px;
@@ -22,8 +33,10 @@ body {
 .universal-container-inner {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   color: #5a8f4f;
+  box-sizing: border-box;
 }
 
 .universal-container-active {

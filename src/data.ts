@@ -36,7 +36,7 @@ export const detailItems = [
     ],
   },
   {
-    name: "Luxury",
+    name: "Lux",
     price: 500,
     features: [
       "Air conditioning",

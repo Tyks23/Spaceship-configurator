@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
 import "./Global.scss";
 import "./App.scss";
 import OptionColor from "./components/OptionColor";
@@ -39,28 +38,29 @@ function App() {
 
   return (
     <div className="App">
-      <div className="Window">
-        <h1> Spaceship configurator </h1>
-
-        <div className="testclass">
-          <PriceWindow costs={costs} />
-          <h2> Select color: </h2>
-          <div className="selection">
-            {colorItems.map((item, index) => (
-              <OptionColor
-                active={index === selected.color}
-                color={item.color}
-                name={item.name}
-                price={item.price}
-                onClick={() => setSelected({ ...selected, color: index })}
-              />
-            ))}
-          </div>
+      <h1 className="Title" > Spaceship configurator </h1>
+      <PriceWindow costs={costs} />
+      <div className="Color-selection">
+        <h2> Select color: </h2>
+        <div className="selection">
+          {colorItems.map((item, index) => (
+            <OptionColor
+              key={`${index}-${item}`}
+              active={index === selected.color}
+              color={item.color}
+              name={item.name}
+              price={item.price}
+              onClick={() => setSelected({ ...selected, color: index })}
+            />
+          ))}
         </div>
+      </div>
+      <div className="Power-selection">
         <h2> Select power: </h2>
         <div className="selection">
           {powerItems.map((item, index) => (
             <OptionSimple
+              key={`${index}-${item}`}
               active={index === selected.power}
               name={item.name}
               price={item.price}
@@ -70,10 +70,13 @@ function App() {
             />
           ))}
         </div>
+      </div>
+      <div className="Warp-drive-selection">
         <h2> Warp drive: </h2>
         <div className="selection">
           {warpItems.map((item, index) => (
             <OptionSimple
+              key={`${index}-${item}`}
               active={index === selected.drive}
               name={item.name}
               price={item.price}
@@ -83,10 +86,13 @@ function App() {
             />
           ))}
         </div>
+      </div>
+      <div className="Package-selection">
         <h2> Select option package: </h2>
         <div className="selection">
           {detailItems.map((item, index) => (
             <OptionDetail
+              key={`${index}-${item}`}
               active={index === selected.package}
               name={item.name}
               price={item.price}

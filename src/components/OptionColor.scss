@@ -2,24 +2,17 @@
 
 .container-color {
   line-height: 1px;
-  margin-left: 32px;
   @extend .universal-container-inner;
   width: 160px;
   height: 112px;
   @extend .universal-border;
-
   padding: 1px;
 }
 
 .color-sample {
-  margin-top: 16px;
   width: 64px;
   height: 32px;
   border-radius: 8px;
-}
-
-p {
-  margin-block-end: 6px;
 }
 
 .container-color-active {
