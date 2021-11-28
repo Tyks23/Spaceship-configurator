@@ -38,6 +38,7 @@ function App() {
 
   return (
     <div className="App">
+      <title>Spaceship Configurator</title>
       <h1 className="Title" > Spaceship configurator </h1>
       <PriceWindow costs={costs} />
       <div className="Color-selection">
