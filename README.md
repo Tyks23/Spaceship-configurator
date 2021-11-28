@@ -1,9 +1,9 @@
-#Spaceship configurator
+# Spaceship configurator
 
 ## Tech used:
 ReactJS + Typescript
-SCSS
-Cypress
+SCSS  
+Cypress  
 
 ### Dev console commands
 all commands should be run in the spaceship-configurator directory.
