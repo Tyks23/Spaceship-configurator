@@ -1,7 +1,7 @@
 # Spaceship configurator
 
 ## Tech used:
-ReactJS + Typescript
+ReactJS + Typescript  
 SCSS  
 Cypress  
 
