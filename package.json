@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.9.11",
     "@testing-library/dom": "^8.11.1",
     "@testing-library/user-event": "^12.8.3"
   }
