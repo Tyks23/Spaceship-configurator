@@ -1,6 +1,10 @@
 # Spaceship configurator
+### Created by
+Mattias Tüksammel
+### URL
+https://spaceship-configurator.vercel.app/
 
-## Tech used:
+### Tech used:
 ReactJS + Typescript  
 SCSS  
 Cypress  
