@@ -4,6 +4,11 @@ import userEvent from '@testing-library/user-event'
 import App from './App';
 import OptionColor from "./components/OptionColor";
 
+//SWITCHED TO CYPRESS SO ALL OF THIS IS REDUNDANT
+//CHECK ../cypress/integration/Test.js  FOR TESTS
+
+
+
 describe("UI testing", () => {
     test('check is App renders', () => {
         render(<App />)
