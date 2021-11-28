@@ -1,13 +1,13 @@
 export const colorItems = [
   { color: "#FFFFFF", price: 0, name: "Snow" },
   { color: "#FF7A00", price: 100, name: "Volcano" },
-  { color: "#6BE4FF", price: 1000, name: "Sky" },
+  { color: "#6BE4FF", price: 100, name: "Sky" },
 ];
 
 export const powerItems = [
-  { name: "100 MW", price: 100 },
-  { name: "150 MW", price: 150 },
-  { name: "200 MW", price: 200 },
+  { name: "100 MW", price: 0 },
+  { name: "150 MW", price: 200 },
+  { name: "200 MW", price: 500 },
 ];
 
 export const warpItems = [

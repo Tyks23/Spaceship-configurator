@@ -33,7 +33,7 @@ describe('renders page', () => {
     t.contains("+100€")
 
     cy.get('.Color-selection > .selection > :nth-child(3)').click();
-    t.contains("+1000€")
+    t.contains("+100€")
 
     cy.get('.Color-selection > .selection > :nth-child(1)').click();
     t.contains("+0€")
@@ -43,16 +43,16 @@ describe('renders page', () => {
     cy.visit("/");
 
     const t = cy.get(".container-price > p").eq(5);
-    t.contains("+100€");
+    t.contains("+0€");
 
     cy.get('.Power-selection > .selection > :nth-child(2)').click();
-    t.contains("+150€")
-
-    cy.get('.Power-selection > .selection > :nth-child(3)').click();
     t.contains("+200€")
 
+    cy.get('.Power-selection > .selection > :nth-child(3)').click();
+    t.contains("+500€")
+
     cy.get('.Power-selection > .selection > :nth-child(1)').click();
-    t.contains("+100€")
+    t.contains("+0€")
   })
 
   it('updates warp price', () => {
