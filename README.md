@@ -1,6 +1,5 @@
 # Spaceship configurator
-### Created by
-Mattias Tüksammel
+
 ### URL
 https://spaceship-configurator.vercel.app/
 
